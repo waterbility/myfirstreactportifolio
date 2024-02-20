@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+  background-color:greenyellow;
+  color: rgb(2, 2, 24);
+}
+
+.img{
+transform: scale(0.4);
+border-radius:5%;
+}
+.none{
+  display:none;
+}
+.box{
+  border: white 1px soild;
+  border-radius: 5%;
+}
+.input{
+    background-color: transparent;
+    border-bottom: 2px white solid;
+    color: white;
+    border-top: 0px;
+    outline-offset: 0px;
+    outline: 0px;
+    margin-left: 3vw;
+}
+input:focus,
+input:hover{
+  border-bottom: 2px white soild;
+   outline-offset: 0px;
+   outline: 0px;
+   border-top: 0;
+}
+
+@layer base{
+
+
+.btn{
+  @apply rounded-full text-white font-medium
+}
+
+.section{
+  @apply py-6 lg:py-24 lg:h-screen flex items-center
+}
+}
+
+
